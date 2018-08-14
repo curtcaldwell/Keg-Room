@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Keg } from './models/keg.model';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  kegs: Keg[] = [
+    new Keg('African Amber', 'MacnJack', 250, 6),
+    new Keg('Rainier', 'RBC', 200, 5),
+    new Keg('Kitty cat blues', 'Black Raven', 250, 6),
+    new Keg('Bodhizafa', 'Georgetown', 260, 7)
+  ];
+  selectedKeg = null;
+  editKeg(clickedKeg) {
+    this.selectedKeg = clickedKeg;
+  }
+  finishedEdit(){
+    this.selectedKeg = null;
+  }
+
 }
