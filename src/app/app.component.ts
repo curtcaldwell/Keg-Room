@@ -7,12 +7,12 @@ import { Keg } from './models/keg.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'The Tap Shack';
   kegs: Keg[] = [
-    new Keg('African Amber', 'MacnJack', 250, 6),
-    new Keg('Rainier', 'RBC', 200, 5),
-    new Keg('Kitty cat blues', 'Black Raven', 250, 6),
-    new Keg('Bodhizafa', 'Georgetown', 260, 7)
+    new Keg('African Amber', 'MacnJack', 250, 6, 1),
+    new Keg('Rainier', 'RBC', 200, 5, 2),
+    new Keg('Kitty cat blues', 'Black Raven', 250, 6, 3),
+    new Keg('Bodhizafa', 'Georgetown', 260, 7, 1)
   ];
   selectedKeg = null;
   editKeg(clickedKeg) {

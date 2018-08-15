@@ -1,14 +1,13 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+
 <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
   </h1>
-  <img width="300" [src]="keg.jpg">
 </div>
 <h2>Here are the Kegs we offer </h2>
-<ul>
-  <li *ngFor="let currentKeg of kegs">{{currentKeg.name}} from {{currentKeg.brewery}} ${{currentKeg.price}}, {{currentKeg.AC}}% <button (click)="editKeg(currentKeg)">Edit!</button></li>
-</ul>
+<app-keg-list [childKegList]="kegs" (clickSender)="editKeg($event)"></app-keg-list>
 <div *ngIf="selectedKeg">
   <h3>{{selectedKeg.name}}</h3>
 
@@ -25,4 +24,6 @@
 <label>Edit Alcohol Content</label>
 <input [(ngModel)]="selectedKeg.AC">
 <button (click)="finishedEdit()">Finished</button>
+</div>
+
 </div>
