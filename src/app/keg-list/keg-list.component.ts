@@ -26,6 +26,4 @@ export class KegListComponent {
       return "bg-success";
     }
   }
-
-
 }

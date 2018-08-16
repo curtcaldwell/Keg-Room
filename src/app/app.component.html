@@ -14,5 +14,5 @@
 
 <app-new-task (sendKeg)="addKeg($event)"></app-new-task>
 
-<app-keg-patron [childKegList]="kegs"></app-keg-patron>
+<app-keg-patron [childKegList]="kegs" (clickedBuy)="buyPint($event)"></app-keg-patron>
 </div>

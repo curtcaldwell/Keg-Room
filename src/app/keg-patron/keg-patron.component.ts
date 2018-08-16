@@ -8,9 +8,9 @@ import { Keg } from '../models/keg.model';
 })
 export class KegPatronComponent {
   @Input() childKegList: Keg[];
-  @Output() clickedBuy = EventEmitter;
+  @Output() clickedBuy = new EventEmitter();
 
-  // buyPint(){
-  //   this.clickedBuy.emit();
-  // }
+  buyButtonClicked(currentKeg: Keg) {
+    this.clickedBuy.emit(currentKeg);
+  }
 }

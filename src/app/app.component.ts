@@ -24,4 +24,7 @@ export class AppComponent {
   addKeg(newKeg: Keg) {
     this.kegs.push(newKeg);
   }
+  buyPint(clickedKeg: Keg){
+    clickedKeg.pint--;
+  }
 }
