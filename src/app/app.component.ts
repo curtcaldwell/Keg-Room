@@ -7,7 +7,7 @@ import { Keg } from './models/keg.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'The Tap Shack';
+  title = 'the Bipedal Swagger Bar';
   kegs: Keg[] = [
     new Keg('African Amber', 'MacnJack', 250, 6, 1, 124),
     new Keg('Rainier', 'RBC', 200, 5, 2, 80),
@@ -26,5 +26,12 @@ export class AppComponent {
   }
   buyPint(clickedKeg: Keg){
     clickedKeg.pint--;
+    if (clickedKeg.pint > 80) {
+      clickedKeg.level = 1;
+    } else if (clickedKeg.pint < 40) {
+      clickedKeg.level = 3;
+    } else {
+      clickedKeg.level = 2
+    }
   }
 }

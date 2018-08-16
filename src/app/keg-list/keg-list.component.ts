@@ -9,12 +9,13 @@ import { Keg } from '../models/keg.model';
 export class KegListComponent {
   @Input() childKegList: Keg[];
   @Output() clickSender = new EventEmitter();
+  //@Output() clickLevel = new EventEmitter();
 
   editButtonClicked(kegToEdit: Keg) {
     this.clickSender.emit(kegToEdit);
   }
 
-  priorityColor(currentKeg)
+  priorityColor(currentKeg: Keg)
   {
     switch(currentKeg.level)
     {

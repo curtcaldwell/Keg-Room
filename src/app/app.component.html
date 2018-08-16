@@ -1,18 +1,117 @@
 <!--The content below is only a placeholder and can be replaced.-->
+
 <div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <div class="body">
 
 <div style="text-align:center">
-  <h1>
+  <div class="jumbotron">
+
+  <h1 id="main">
     Welcome to {{ title }}!
   </h1>
 </div>
+<br>
+<br>
+
+</div>
 <h2>Here are the Kegs we offer </h2>
+<div class="keglist">
+
 
 <app-keg-list [childKegList]="kegs" (clickSender)="editKeg($event)"></app-keg-list>
-
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <app-edit-keg [childSelectedKeg]="selectedKeg" (clickedDone)="finishedEdit()"></app-edit-keg>
 
+<div class="james">
+
 <app-new-task (sendKeg)="addKeg($event)"></app-new-task>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<div class="row">
+
+<iframe src="https://giphy.com/embed/uFX5KhDzjjf1e" width="400" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/cheezburger-falling-fail-uFX5KhDzjjf1e"></a></p>
+<iframe src="https://giphy.com/embed/DKCNQcgbdekrC" width="400" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/bath-gorilla-DKCNQcgbdekrC"></a></p>
+<iframe src="https://giphy.com/embed/l3V0Akmv7LTfIHK6c" width="400" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/planckendael-l3V0Akmv7LTfIHK6c"></a></p>
+<iframe src="https://giphy.com/embed/26gsspfbt1HfVQ9va" width="400" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/funny-cute-lol-26gsspfbt1HfVQ9va"></a></p>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="buybeer">
+
 
 <app-keg-patron [childKegList]="kegs" (clickedBuy)="buyPint($event)"></app-keg-patron>
+</div>
+</div>
 </div>

@@ -1,0 +1,63 @@
+#main {
+  font-family: monospace;
+  font-size: 100px;
+  color: white;
+
+}
+.jumbotron {
+
+  background-size: cover;
+  background-position: center;
+
+  background-image: url("../assets/banana.jpg");
+}
+.keglist {
+  background-image: url("../assets/banana.jpg");
+}
+.buybeer {
+  background-image: url("../assets/banana.jpg");
+}
+.james {
+  background-image: url("../assets/james.jpg");
+}
+@import url(https://fonts.googleapis.com/css?family=Advent+Pro:100);
+html {
+  background:  url(http://upload.wikimedia.org/wikipedia/commons/d/dd/Muybridge_race_horse_animated.gif) no-repeat center center fixed;
+  background-size: cover;
+}
+h1{
+  font-family: 'Advent Pro', sans-serif;
+  font-size: 3em;
+  margin: .2em .5em;
+  color: rgba(0,0,0, 0.3);
+}
+.body {
+    background-image: url("../assets/bipedal.jpg");
+    background-repeat: repeat;
+
+    color: white;
+    text-shadow: 1px 1px 0 #000,
+      -1px 1px 0 #000,
+      1px -1px 0 #000,
+      -1px -1px 0 #000,
+      0px 1px 0 #000,
+      0px -1px 0 #000,
+      -1px 0px 0 #000,
+      1px 0px 0 #000,
+      2px 2px 0 #000,
+      -2px 2px 0 #000,
+      2px -2px 0 #000,
+      -2px -2px 0 #000,
+      0px 2px 0 #000,
+      0px -2px 0 #000,
+      -2px 0px 0 #000,
+      2px 0px 0 #000,
+      1px 2px 0 #000,
+      -1px 2px 0 #000,
+      1px -2px 0 #000,
+      -1px -2px 0 #000,
+      2px 1px 0 #000,
+      -2px 1px 0 #000,
+      2px -1px 0 #000,
+      -2px -1px 0 #000;
+}
