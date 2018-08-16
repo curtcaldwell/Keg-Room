@@ -1,3 +1,2 @@
-<ul>
-  <li [class]="priorityColor(currentKeg)" *ngFor="let currentKeg of childKegList">{{currentKeg.name}} from {{currentKeg.brewery}} ${{currentKeg.price}}, {{currentKeg.AC}}% <button (click)="editButtonClicked(currentKeg)">Edit!</button></li>
-</ul>
+
+  <p [class]="priorityColor(currentKeg)" *ngFor="let currentKeg of childKegList"><button (click)="editButtonClicked(currentKeg)">Edit!</button>{{currentKeg.name}} from {{currentKeg.brewery}} ${{currentKeg.price}}, {{currentKeg.AC}}%, {{currentKeg.pint}} Pints Left</p>

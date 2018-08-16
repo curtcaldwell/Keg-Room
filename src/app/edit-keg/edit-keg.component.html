@@ -1,0 +1,20 @@
+<div *ngIf="childSelectedKeg">
+  <h3>{{childSelectedKeg.name}}</h3>
+
+<h3>Edit Keg</h3>
+<label>Edit Beer</label>
+<input [(ngModel)]="childSelectedKeg.name">
+<br>
+<label>Edit Brewery</label>
+<input [(ngModel)]="childSelectedKeg.brewery">
+<br>
+<label>Edit Price</label>
+<input [(ngModel)]="childSelectedKeg.price">
+<br>
+<label>Edit Alcohol Content</label>
+<input [(ngModel)]="childSelectedKeg.AC"><br>
+<input type="radio" [(ngModel)]="childSelectedKeg.level" [value]="1">1 (Keg Level Low)<br>
+<input type="radio" [(ngModel)]="childSelectedKeg.level" [value]="2">2 (Keg Level Medium)<br>
+<input type="radio" [(ngModel)]="childSelectedKeg.level" [value]="3">3 (Keg Level High)<br>
+<button (click)="finishedEdit()">Finished</button>
+</div>

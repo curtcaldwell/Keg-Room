@@ -1,0 +1,24 @@
+<h1>New Keg</h1>
+<div>
+  <label>New Keg Name:</label>
+  <input #newName>
+</div>
+<div>
+  <label>Brewery:</label>
+  <input #newBrewery>
+</div>
+<div>
+  <label>Price:</label>
+  <input #newPrice>
+</div>
+<div>
+  <label>Alcohol Content:</label>
+  <input #newAC>
+</div>
+<div>
+  <label>Keg Level:</label>
+  <select #newLevel>
+    <option value="1">Full Keg</option>
+  </select>
+  <button (click)="submitForm(newName.value, newBrewery.value, newPrice.value, newAC.value, newLevel.value); newName.value=''; newBrewery.value=''; newPrice.value=''; newAC.value='';">Add</button>
+</div>

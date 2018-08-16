@@ -23,7 +23,7 @@ export class KegListComponent {
       case 3:
       return "bg-danger";
       default:
-      return "bg-info";
+      return "bg-success";
     }
   }
 

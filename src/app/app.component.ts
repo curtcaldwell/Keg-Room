@@ -9,10 +9,10 @@ import { Keg } from './models/keg.model';
 export class AppComponent {
   title = 'The Tap Shack';
   kegs: Keg[] = [
-    new Keg('African Amber', 'MacnJack', 250, 6, 1),
-    new Keg('Rainier', 'RBC', 200, 5, 2),
-    new Keg('Kitty cat blues', 'Black Raven', 250, 6, 3),
-    new Keg('Bodhizafa', 'Georgetown', 260, 7, 1)
+    new Keg('African Amber', 'MacnJack', 250, 6, 1, 124),
+    new Keg('Rainier', 'RBC', 200, 5, 2, 80),
+    new Keg('Kitty cat blues', 'Black Raven', 250, 6, 3, 30),
+    new Keg('Bodhizafa', 'Georgetown', 260, 7, 1, 124)
   ];
   selectedKeg = null;
   editKeg(clickedKeg) {
@@ -21,5 +21,7 @@ export class AppComponent {
   finishedEdit(){
     this.selectedKeg = null;
   }
-
+  addKeg(newKeg: Keg) {
+    this.kegs.push(newKeg);
+  }
 }
